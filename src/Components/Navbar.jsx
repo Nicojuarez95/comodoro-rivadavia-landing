@@ -52,7 +52,7 @@ export default function Navbar() {
 
           <div className='grow'>
             <Typography variant="h6" color="textPrimary" component="p">
-            <p className='saludo'><span className='holas'>Hi</span> {user ? user.email : "!"}</p>
+            <p className='saludo'><span className='holas'>Hola</span> {user ? user.email : "!"}</p>
             </Typography>
             
             <div className="button">
@@ -61,13 +61,6 @@ export default function Navbar() {
                     <strong className='boton'>{user ? "Log Out" : "Log In"}</strong>
                 </Button>
               </Anchor>
-                <Link to="/carrito">
-                  <IconButton>
-                      <Badge badgeContent={basket?.length} color='secondary'>
-                          <ShoppingCart fontSize='large'/>
-                      </Badge>
-                  </IconButton>
-                </Link>
                 
             </div>
           </div>
