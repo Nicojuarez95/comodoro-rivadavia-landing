@@ -23,7 +23,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="#">
-        Lucas
+        Lucas Petroff
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -120,11 +120,7 @@ export default function SignIn() {
               Iniciar Sesion
             </Button>
             <Grid container>
-              {/* <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid> */}
+             
               <Grid item>
                 <Anchor to="/registro" variant="body2">
                   {"No tenes cuenta? Registrate acá"}

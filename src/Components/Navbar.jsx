@@ -52,7 +52,7 @@ export default function Navbar() {
 
           <div className='grow'>
             <Typography variant="h6" color="textPrimary" component="p">
-            <p className='saludo'><span className='holas'>Hola</span> {user ? user.email : "!"}</p>
+            <p className='saludo'><span className='holas'>Bienvenido a <span style={{color: "white", fontWeight: "600"}}>Comodoro Rivadavia</span></span> {user ? user.email : "!"}</p>
             </Typography>
             
             <div className="button">
