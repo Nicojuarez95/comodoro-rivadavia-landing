@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Products from './Components/Products';
+import Home from './Components/home.jsx';
 import SignIn from './Components/Signin';
 import SignUp from "./Components/Signup"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -34,7 +34,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Products />} />
+          <Route path="/" element={<Home />} />
           <Route path="/iniciarsesion" element={<SignIn />} />
           <Route path="/registro" element={<SignUp />} />
         </Routes>

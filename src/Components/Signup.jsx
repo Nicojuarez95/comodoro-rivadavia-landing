@@ -19,8 +19,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://www.nicolasjuarez.net/">
-        Nicolas Juarez
+      <Link color="inherit" href="#">
+        Lucas
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -85,7 +85,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="firstName"
-                  label="Name"
+                  label="Nombre"
                   autoFocus
                 />
               </Grid>
@@ -94,7 +94,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="lastName"
-                  label="Last name"
+                  label="Apellido"
                   name="lastName"
                   autoComplete="family-name"
                 />
@@ -118,7 +118,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   name="password"
-                  label="Password"
+                  label="Contraseña"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -138,12 +138,12 @@ export default function SignUp() {
               sx={{ mt: 3, mb: 2 }}
               onClick={signup}
             >
-              Create acount
+              Crear Cuenta
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Anchor to="/iniciarsesion" variant="body2">
-                Do you already have an account? Log in
+                Ya tenés cuenta? Iniciá Sesion
                 </Anchor>
               </Grid>
             </Grid>
