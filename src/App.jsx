@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/home.jsx';
-import SignIn from './Components/Signin';
-import SignUp from "./Components/Signup"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { auth } from './firebase';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -35,8 +33,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/iniciarsesion" element={<SignIn />} />
-          <Route path="/registro" element={<SignUp />} />
         </Routes>
       </div>
     </Router>

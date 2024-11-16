@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import logo from "../images/descarga.png"
+import logo from "../images/carlota.png"
 import { ShoppingCart } from '@mui/icons-material';
 import { Badge } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -52,15 +52,15 @@ export default function Navbar() {
 
           <div className='grow'>
             <Typography variant="h6" color="textPrimary" component="p">
-            <p className='saludo'><span className='holas'>Bienvenido a <span style={{color: "white", fontWeight: "600"}}>Comodoro Rivadavia</span></span> {user ? user.email : "!"}</p>
+            <p className='saludo'><span className='holas'>Bienvenido a <span style={{color: "white", fontWeight: "600"}}>La Carlota</span></span> {user ? user.email : "!"}</p>
             </Typography>
             
             <div className="button">
-              <Anchor to="/iniciarsesion">
+              {/* <Anchor to="/iniciarsesion">
                 <Button variant="outlined" onClick={handleAuth}>
                     <strong className='boton'>{user ? "Cerrar Sesion" : "Iniciar Sesion"}</strong>
                 </Button>
-              </Anchor>
+              </Anchor> */}
                 
             </div>
           </div>
